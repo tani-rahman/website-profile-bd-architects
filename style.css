@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+.btn{
+    background-color: #ff900e;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border:none;
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border:  2px solid #FF900E;
+    color: #131313;
+}
+
+header{
+    background-color: #fff4ef;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+nav h1{
+    font-size: 28px;
+    font-weight: 700;
+   
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+nav.container .menu-list li a:hover {
+    color: #ff900e;
+  }
+  
+/*banner style*/
+.banner-container{
+    width: 680px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-tittle{
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.banner-description{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+}
+.banner-img img{
+    width: 1200px;
+    height: 600px;
+}
+
+/*about*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 50px 90px;
+}
+.about-img{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.about-img img{
+    width: 250px;
+    height: 250px;
+}
+.banner-container{
+    width: 50%;
+}
+.about-tittle{
+    font-size: 45px;
+    font-family: "Work Sans";
+    margin-bottom: 10px;
+}
+.quick-text{
+    color: #727272;
+}
+.of{
+    color: #131313;
+}
+.features-text{
+     color: #FF900E;
+}
+.about-container p{
+    margin-bottom: 10px;
+}
+
+/**feature**/
+.feature{
+    display: flex;
+    padding: 100px 50px;
+    gap: 20px;
+}
+.feature-img img{
+   width: 500px;
+   height: 90%;
+}
+.feature-tittle{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card{
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 35px 0 rgb(218, 216, 216);
+}
+.feature-img{
+    position: relative;
+}
+.experince{
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    background-color: #FF900E;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fact{
+    padding: 50px 100px;
+}
+.fact-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.fact-container .card{
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 20px 20px;
+}
+.fact-title{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/**spon**/
+
+.spon{
+    padding: 10px 100px;
+    text-align: center;
+}
+.spon-discribtion{
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.spon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.spon-container img{
+    margin-top: 50px;
+}
+footer{
+    background-color: #FFF4E7;
+    border: 5px;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+/***reponsive design***/
+@media screen and (max-width:576px){
+    nav,.fact-container,.spon-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-container{
+        width: 100%;
+    }
+    .banner img{
+        padding: 20px 10px;
+    }
+    .banner-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner-tittle{
+        font-size: 34px;
+        border-left:  2px solid #ff900e;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    .about,.feature{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-img,.about-container,.feature-img img ,.spon-discribtion{
+        grid-template-columns: 1fr;
+        width: 100px;
+        text-align: center;
+    }
+    .experince{
+        position: static;
+        width: 100%;
+    }
+    .fact{
+        padding: 10px;
+    }
+    footer{
+        margin: 0;
+        padding: 0px 10px;
+    }
+}
